@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+    tools:context=".bookdescription">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/book_desc_img"
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/random" />
+
+            <TextView
+                android:id="@+id/book_desc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_desc_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Book Name"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/book_desc_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_desc_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="Author"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:id="@+id/book_desc_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_desc_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:text="Price"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/book_desc_quant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_desc_Price"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="2dp"
+                android:text="Quantity :"
+                android:textSize="25sp" />
+
+
+            <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+                android:id="@+id/number_picker_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_desc_Price"
+                android:layout_alignRight="@id/book_desc_quant"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="-80dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/number_picker_bg_color"
+                app:snp_buttonIconLeft="@drawable/ic_dec"
+                app:snp_buttonIconRight="@drawable/ic_inc"
+                app:snp_maxValue="5"
+                app:snp_minValue="1"
+                app:snp_orientation="horizontal"
+                app:snp_stepSize="1"
+                app:snp_updateInterval="100"
+                app:snp_value="1"
+                app:snp_valueMarginEnd="8dp"
+                app:snp_valueMarginStart="8dp" />
+
+
+            <Button
+                android:id="@+id/add_to_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_desc_quant"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Add to cart" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".categories">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/cat_text"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/engineering"
+            android:layout_below="@+id/cat_text"
+            android:layout_marginTop="40dp"
+            android:id="@+id/cat_eng"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Engineering"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/cat_eng"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/medical"
+            android:layout_below="@+id/cat_eng"
+            android:layout_marginTop="60dp"
+            android:id="@+id/cat_med"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/cat_med"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

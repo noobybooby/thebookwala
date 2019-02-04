@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "17584333622",
+    "firebase_url": "https://noobybooby-a3946.firebaseio.com",
+    "project_id": "noobybooby-a3946",
+    "storage_bucket": "noobybooby-a3946.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17584333622:android:9ffcb8fcf9a3c91d",
+        "android_client_info": {
+          "package_name": "com.example.saarc1.bookwala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17584333622-ko0vkbg8a660ojcac3ufkepgkait4v1p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saarc1.bookwala",
+            "certificate_hash": "010e6c9e5e7657a628b85f2d49d9513cfa2b1b6a"
+          }
+        },
+        {
+          "client_id": "17584333622-hr9sdjdi86vt9a01kvvnu40ebfehjnsl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxNtiB33XZEa4ksJEJTniK0pFHvXZNuGg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17584333622-hr9sdjdi86vt9a01kvvnu40ebfehjnsl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

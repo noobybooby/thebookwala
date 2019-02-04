@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCDA05"
+    tools:context=".Login">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+            android:id="@+id/logoImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo"
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:hint="Enter your Email"
+            android:layout_below="@+id/logoImg"
+            android:background="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:id="@+id/loginEmail"
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/loginEmail"
+            android:layout_centerHorizontal="true"
+            android:background="#fff"
+            android:layout_marginTop="30dp"
+            android:id="@+id/loginPasssword"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonLogin"
+            android:layout_below="@+id/loginPasssword"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not yet registered? SignUp"
+            android:id="@+id/nonExisting"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/buttonLogin"
+            android:layout_marginTop="20dp"
+            />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
